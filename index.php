@@ -1,8 +1,8 @@
 <?php
 
 include __DIR__ . '/classes/movie.php';
+include __DIR__ . '/classes/genre.php';
 include __DIR__ . '/data.php';
-
 
 
 ?>
@@ -21,9 +21,13 @@ include __DIR__ . '/data.php';
     <div class="">
         <ul><?php
             foreach ($arrMovie as $movie) { ?>
-                <li><?= $movie->title ?> - <?= $movie->year ?> - <?= $movie->vote ?> <?php foreach ($movie->genre as $genre) { ?>
-                        <?= $genre ?>
-                    <?php } ?>
+                <li>
+                    <h1>Titolo: <?= $movie->title ?></h1>
+                    <h3>Anno: <?= $movie->year ?></h3>
+                    <h3>Voto: <?= $movie->vote ?></h3>
+                    <h3>Generi: <?php foreach ($movie->genre as $genre) { ?>
+                            <?= $genre ?>
+                        <?php } ?></h3>
                 </li>
             <?php } ?>
         </ul>

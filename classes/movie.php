@@ -1,4 +1,5 @@
 <?php
+include __DIR__ . '/movie.php';
 
 class Movie
 {
