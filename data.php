@@ -1,6 +1,6 @@
 <?php
-include __DIR__ . '/classes/movie.php';
-include __DIR__ . '/classes/genre.php';
+include __DIR__ . '/classes/Movie.php';
+include __DIR__ . '/classes/Genre.php';
 
 $arrMovie = [
 

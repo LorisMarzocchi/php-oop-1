@@ -1,14 +1,10 @@
 <?php
 class Genre
 {
-    public string $genreString;
+    public string $name;
 
-    public function __construct($genreString)
+    public function __construct($name)
     {
-        $this->genreString = $genreString;
-    }
-    public function __toString()
-    {
-        return $this->genreString;
+        $this->name = $name;
     }
 }

@@ -25,7 +25,7 @@ include __DIR__ . '/data.php';
                     <h3>Anno: <?= $movie->year ?></h3>
                     <h3>Voto: <?= $movie->vote ?></h3>
                     <h3>Generi: <?php foreach ($movie->genre as $genre) { ?>
-                            <?= $genre ?>
+                            <?= $genre->name ?>
                         <?php } ?></h3>
                 </li>
             <?php } ?>
