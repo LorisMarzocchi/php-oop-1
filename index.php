@@ -21,8 +21,11 @@ include __DIR__ . '/data.php';
     <div class="">
         <ul><?php
             foreach ($arrMovie as $movie) { ?>
-                <li><?= $movie->title ?> - <?= $movie->year ?> - <?= $movie->vote ?> - <?= $movie->genre ?></li><?php
-                                                                                                            } ?>
+                <li><?= $movie->title ?> - <?= $movie->year ?> - <?= $movie->vote ?> <?php foreach ($movie->genre as $genre) { ?>
+                        <?= $genre ?>
+                    <?php } ?>
+                </li>
+            <?php } ?>
         </ul>
     </div>
 </body>
