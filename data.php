@@ -1,4 +1,7 @@
 <?php
+include __DIR__ . '/classes/movie.php';
+include __DIR__ . '/classes/genre.php';
+
 $arrMovie = [
 
     new Movie(
@@ -13,7 +16,7 @@ $arrMovie = [
         'Interstellar',
         '2014',
         '4',
-        [new Genre('Azione'), new Genre('Fantascienza'), new Genre('boooo')]
+        [new Genre('Azione'), new Genre('Drammatico'), new Genre('Fantascienza')]
 
 
     ),

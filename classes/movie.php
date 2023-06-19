@@ -1,13 +1,10 @@
 <?php
-include __DIR__ . '/movie.php';
-
 class Movie
 {
     public string $title;
     public string $year;
     public string $vote;
     public array $genre;
-
 
     public function __construct($title, $year, $vote, $genre = [])
     {
